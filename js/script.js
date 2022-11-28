@@ -13,7 +13,7 @@ BottoneGenera.addEventListener("click", function(){
 
 
     const prezzo = km * 0.21;
-   
+    let sconto;
 
 
     if(fasciaEta == "minorenne"){
@@ -30,5 +30,7 @@ BottoneGenera.addEventListener("click", function(){
         console.log( "il prezzo è " + sconto)
     }
    
+    
 
+    
 })

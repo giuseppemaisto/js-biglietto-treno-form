@@ -3,3 +3,41 @@
     padding: 0;
     margin:0;
   }
+
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    
+  }
+  body{
+    background-color: #AA2A50;
+  }
+  h2{
+    text-align: center;
+    color: white;
+  }
+  .box-one{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .col{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+ button{
+    padding: 5px;
+    margin: 50px 10px 0 10px;
+    border-radius: 10px;
+ }
