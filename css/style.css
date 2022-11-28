@@ -45,7 +45,10 @@
     background-color: white;
     padding:20px;
     opacity: 0;
-    transition: opacity 0.5s;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
   }
   .box-two{
     background-color: white;
