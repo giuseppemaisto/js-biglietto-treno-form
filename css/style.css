@@ -41,3 +41,29 @@
     margin: 50px 10px 0 10px;
     border-radius: 10px;
  }
+ .container-box-two{
+    background-color: white;
+    padding:20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .box-two{
+    background-color: white;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+  }
+  .nome-pass{
+    background-color: grey;
+    padding: 20px;
+  }
+  li{
+    list-style: none;
+    padding: 20px 20px;
+  }
+  ul{
+    display: inline-block;
+  }
+  .show{
+    opacity:1;
+  }
