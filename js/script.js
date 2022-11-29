@@ -17,16 +17,16 @@ BottoneGenera.addEventListener("click", function(){
 
 
     if(fasciaEta == "minorenne"){
-        prezzo = 0.21 * km * 0.80;
+        prezzo = (0.21 * km * 0.80).toFixed(2);
         
         console.log( "il prezzo è " + prezzo)
     }else if(fasciaEta == "over-65"){
-        prezzo = 0.21 * km * 0.60;
+        prezzo = (0.21 * km * 0.60).toFixed(2);
         
         console.log( "il prezzo è " + prezzo)
     }
     else if (eta = 'maggiorenne'){
-        prezzo = 0.21 * km;
+        prezzo = (0.21 * km).toFixed(2);
         console.log( "il prezzo è " + prezzo)
     }
     else{
