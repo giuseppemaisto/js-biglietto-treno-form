@@ -12,22 +12,25 @@ BottoneGenera.addEventListener("click", function(){
     console.log(fasciaEta);
 
 
-    const prezzo = km * 0.21;
-    let sconto;
+   let prezzo;
+    
 
 
     if(fasciaEta == "minorenne"){
-        let sconto = prezzo * 0.80;
+        prezzo = 0.21 * km * 0.80;
         
-        console.log( "il prezzo è " + sconto)
+        console.log( "il prezzo è " + prezzo)
     }else if(fasciaEta == "over-65"){
-        let sconto = prezzo * 0.60;
+        prezzo = 0.21 * km * 0.60;
         
-        console.log( "il prezzo è " + sconto)
+        console.log( "il prezzo è " + prezzo)
+    }
+    else if (eta = 'maggiorenne'){
+        prezzo = 0.21 * km;
+        console.log( "il prezzo è " + prezzo)
     }
     else{
-        sconto = prezzo;
-        console.log( "il prezzo è " + sconto)
+        alert('DEVI SELEZIONARE UN ETA')
     }
 
     const carrozza = Math.floor(Math.random() * 10) + 1;
@@ -37,7 +40,7 @@ BottoneGenera.addEventListener("click", function(){
     
    document.getElementById("nome").innerHTML = name;
    document.getElementById("costo-biglietto").innerHTML = prezzo + "€";
-   document.getElementById("sconto").innerHTML = sconto;
+   document.getElementById("sconto").innerHTML = prezzo;
    document.getElementById("carrozza").innerHTML = carrozza;
    document.getElementById("codice-cp").innerHTML = codiceCp;
  
@@ -46,3 +49,6 @@ BottoneGenera.addEventListener("click", function(){
 
 
 })
+
+const BottoneAnnulla = getElementById("annulla")
+
