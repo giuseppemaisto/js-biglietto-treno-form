@@ -31,22 +31,18 @@ BottoneGenera.addEventListener("click", function(){
     }
 
     const carrozza = Math.floor(Math.random() * 10) + 1;
-    // creo la variabile carroza che genera un numero casuale tra 1 e 9/
- 
-    // creo la variabile codiceCp che genera un numero casuale tra 900000 e 999999
+   
     const codiceCp = Math.floor(Math.random() * 100000) + 900000;
    
-     // inserisco le variabili: nome, totale, tipo di offerta e codice cp all'interno della parte "crea il biglietto"
+    
    document.getElementById("nome").innerHTML = name;
    document.getElementById("costo-biglietto").innerHTML = prezzo + "€";
    document.getElementById("sconto").innerHTML = sconto;
    document.getElementById("carrozza").innerHTML = carrozza;
    document.getElementById("codice-cp").innerHTML = codiceCp;
-   // inserisco le variabili: nome, totale, tipo di offerta e codice cp all'interno della parte "crea il biglietto"/
-
-   // mostra il biglietto quando si clicca il puslante "genera"
+ 
    document.getElementById('ticket').classList.add("show");
-   // mostra il biglietto quando si clicca il puslante "genera"/
+   
 
 
 })
